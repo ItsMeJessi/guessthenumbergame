@@ -34,6 +34,7 @@ public class NumberGenerator : MonoBehaviour
         attempts = 0;
         messageText.text = "I'm thinking of a number between 1 and 100.";
         attemptsText.text = "Current attempts : 0";
+        inputField.text = "";
     }
 
     private void CheckGuess()
