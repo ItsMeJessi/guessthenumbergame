@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c33fea61-9287-4840-8bf3-7eeb9e9686ba" name="Changes" comment="" />
+    <list default="true" id="c33fea61-9287-4840-8bf3-7eeb9e9686ba" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.GuessTheNumber/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GuessTheNumber/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/NumberGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/NumberGenerator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -97,7 +102,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1737303098821</updated>
-      <workItem from="1737303099361" duration="3425000" />
+      <workItem from="1737303099361" duration="3852000" />
     </task>
     <servers />
   </component>

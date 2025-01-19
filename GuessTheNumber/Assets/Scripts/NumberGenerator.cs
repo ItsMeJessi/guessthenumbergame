@@ -12,6 +12,10 @@ public class NumberGenerator : MonoBehaviour
     [SerializeField] private Button checkButton;
     [SerializeField] private Button restartButton;
     [SerializeField] private AudioSource audioSource;
+    [SerializeField] private Toggle hardModeToggle;
+
+    private int minimalValue = 1;
+    private int maximalValue = 101;
 
     private int targetNumber;
     private int attempts;
@@ -23,6 +27,22 @@ public class NumberGenerator : MonoBehaviour
         checkButton.onClick.AddListener(CheckGuess);
     }
 
+    public void OnToggleChanged(bool v)
+    {
+        if (v)
+        {
+            minimalValue = 1;
+            maximalValue = 101;
+        }
+        else
+        {
+            minimalValue = 1;
+            maximalValue = 51;
+        }
+        
+        RestartGame();
+    }
+
     private void OnDestroy()
     {
         checkButton.onClick.RemoveListener(CheckGuess);
@@ -31,9 +51,9 @@ public class NumberGenerator : MonoBehaviour
 
     private void SetGame()
     {
-        targetNumber = Random.Range(1, 101);
+        targetNumber = Random.Range(minimalValue, maximalValue);
         attempts = 0;
-        messageText.text = "I'm thinking of a number between 1 and 100.";
+        messageText.text = $"I'm thinking of a number between {minimalValue} and {maximalValue-1}.";
         attemptsText.text = "Current attempts : 0";
         inputField.text = "";
     }
