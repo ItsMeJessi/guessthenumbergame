@@ -11,6 +11,7 @@ public class NumberGenerator : MonoBehaviour
     [SerializeField] private TMP_Text attemptsText;
     [SerializeField] private Button checkButton;
     [SerializeField] private Button restartButton;
+    [SerializeField] private AudioSource audioSource;
 
     private int targetNumber;
     private int attempts;
@@ -48,6 +49,7 @@ public class NumberGenerator : MonoBehaviour
             if (playerGuess == targetNumber)
             {
                 messageText.text = "Correct! You've guessed the number!";
+                audioSource.Play();
             }
             else if (playerGuess < targetNumber)
             {
